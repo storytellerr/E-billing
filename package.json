@@ -1,0 +1,20 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "Gyanee",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "date-and-time": "^0.6.3",
+    "ejs": "^2.6.1",
+    "electron": "^4.0.6",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "qr-image": "^3.2.0"
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+	<title><%= title %></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<% include Templates/header.ejs %>
+	
+<div class="main">
+	<div class="container">
+		<div class="row">
+			<div class="d1">
+				<div class="panel panel-info">
+      				<div class="panel-heading">Customers Details</div>
+      				<div class="panel-body">
+      					<form class="form-inline lg">
+      						Customer Name: <input type="text" name="name" placeholder="Customer Name">&emsp;&emsp;&emsp;&emsp;&emsp;
+      						Contact: <input type="text" name="contact" placeholder="Contact">&emsp;&emsp;&emsp;&emsp;&emsp;
+      						Email: <input type="text" name="email" placeholder="Email">
+      					</form>
+      				</div>
+    			</div>
+			</div>
+
+			<div class="d1">
+				<div class="panel panel-info d2 pd">
+      				<div class="panel-heading">Items</div>
+      				<div class="panel-body">
+      					<table class="table" name="">
+						  <thead>
+						    <tr>
+						      <th><em class="fa fa-cog"></em></th>
+						      <th scope="col">Item name</th>
+						      <th scope="col">Description</th>
+						      <th scope="col">Qty</th>
+						      <th scope="col">Price</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">1</th>
+						      <td>Mark</td>
+						      <td>Otto</td>
+						      <td>1</td>
+						      <td>2000</td>
+						    </tr>
+						  </tbody>
+						</table>	
+      				</div>
+    			</div>
+			</div>				
+				<h2 class="text-right heading1"><b>Total : </b><span class="label label-default">Rs. 6000</span></h2>
+				<div class="text-right d3"><button class="btn btn-info btn-lg button" onclick="">Generate bill</button></div>
+    	</div>
+	</div>
+</div>
+</div>
+   
+</body>
+</html> 
